@@ -1,0 +1,157 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.books{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.book{
+  width: 250px;
+  height: 370px;
+  text-align: center;
+  margin: 10px 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 2px darkred solid;
+  padding: 0;
+}
+.book img{
+  width: 100%;
+}
+.book .rank{    
+  position: absolute;
+  background-color: darkred;
+  top: -3%;
+  left: 4px;
+  border-radius: 50%;
+  font-size: 21px;
+  color: white;
+  width: 30px;
+  height: 30px;
+
+}
+.book .caption{
+    position: absolute;
+    bottom: -100%;
+    background-color: rgba(139, 0, 0, 0.808);
+    color: white;
+    transition: 0.3s;
+    width: 100%;
+
+}  
+.book:hover .caption{
+  position: absolute;
+  bottom: 0%;
+}
+
+nav{
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+nav li{
+  display: inline-block;
+  list-style: none;
+  margin: 0 20px;
+}
+nav a{
+  text-decoration: none;
+  color:black;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+nav a:hover{
+  background-color: darkred;
+  color:white;
+}
+nav .active{
+  background-color: darkred;
+  color:white;
+}
+
+
+.book-container{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.book-container img{
+  width: 270px;
+  border-radius:5px ;
+  border: 1.5px solid darkred;
+
+}
+.book-container .caption{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:0 10px;
+}
+.book-container .caption p{
+  border-bottom: 1px solid darkred;
+  padding-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+.book-container .caption button , .book-container .caption a{
+  background-color: darkred;
+  color:white;
+  text-decoration: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  border: none;
+  margin: 10px ;
+}
+.book-container .caption button:hover , .book-container .caption a:hover{
+  background-color: rgb(80, 0, 0);
+  color:white;
+
+}
+
+
+
+.fav-list h2{
+  text-align: center;
+}
